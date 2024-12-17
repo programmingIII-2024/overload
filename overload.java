@@ -33,6 +33,26 @@ class Person
 		System.out.println("年齢と体重を設定するメソッドが呼ばれました");
 	}
 
+	// 体重と身長を設定するメソッド
+	public void setValue(double myWeight, double myHeight)
+	{
+		this.myWeight = myWeight;
+		this.myHeight = myHeight;
+		System.out.println("身長と体重を設定するメソッドが呼ばれました");
+	}
+
+	
+	//	年齢と身長を設定するメソッドは 
+	//	年齢、体重とint, doubleの組合せが同じなので同時に有効にできない
+	/*
+	public void setValue(int myAge, double myHeight)
+	{
+		this.myAge=myAge;
+		this.myHeight=myHeight;
+		System.out.println("年齢と身長を設定するメソッドが呼ばれました");
+	}
+	*/
+
 	// 年齢、体重、身長を設定するメソッド
 	public void setValue(int myAge, double myWeight,double myHeight)
 	{
@@ -41,6 +61,7 @@ class Person
 		this.myHeight = myHeight;
 		System.out.println("年齢と体重を設定するメソッドが呼ばれました");
 	}
+
 	private void calcBMI()
 	{
 		double calc_height = myHeight/100;
