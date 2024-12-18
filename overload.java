@@ -59,7 +59,7 @@ class Person
 		this.myAge = myAge;
 		this.myWeight = myWeight;
 		this.myHeight = myHeight;
-		System.out.println("年齢と体重を設定するメソッドが呼ばれました");
+		System.out.println("年齢と体重と身長を設定するメソッドが呼ばれました");
 	}
 
 	private void calcBMI()
@@ -121,6 +121,7 @@ class Person
 			System.out.println("身長がおかしな値です");
 			return -1;								//負値のとき-1
 		}
+
 
 		this.myHeight = myHeight;
 
